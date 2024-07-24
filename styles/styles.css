@@ -18,9 +18,13 @@ html, body {
 }
 
 .sidebar img{
-    width: 164px;
-    margin-left: 16px;
+    width: 100px;
+    height:100px;
+    margin-top: 10px;
+    margin-left: 47px;
     margin-right: auto;
+    border-radius: 50%; 
+    border: 4px solid white;
 }
 .sidebar ul {
  margin-left: -54px;
@@ -45,11 +49,24 @@ html, body {
     background-color: rgb(255, 255, 255);
     color: rgb(69, 81, 255);
 }
-.main-content img {
-margin-top: 0px;
-    margin-bottom: 300px;
-    text-align: center;
-    margin-left: auto;
+
+.sidebar .button.active {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 118);
+    font-weight: bold;
+}
+
+.bg{
+  width: 100%;
+  background-image: url('../img/dog1.jpeg');
+  height: 500px; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: auto;
+  margin-left: 230px;
+  text-align: center;
 }
 .main-content{
 
@@ -60,18 +77,20 @@ margin-top: 0px;
 }
 .main-content h1 {
     font-size: 50px;
-    margin-left: 390px;
+    margin-left: 300px;
     text-align: left;
 }
 .main-content h2 {
-    margin-left: 390px;
+    margin-left: 300px;
     text-align: left;
 }
 
 .main-content p {
     width: 60%;
     margin-right: auto;
-    margin-left: auto;
+    margin-left: 300px;
     text-align: left;
+    font-size: 20px;
+    font-family: "Lucida Console", "Courier New", monospace;
   
 }
