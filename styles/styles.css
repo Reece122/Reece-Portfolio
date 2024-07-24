@@ -25,6 +25,17 @@ html, body {
     margin-right: auto;
     border-radius: 50%; 
     border: 4px solid white;
+    transition-duration: 0.1s;
+}
+
+.sidebar img:hover{
+    width: 100px;
+    height:100px;
+    margin-top: 10px;
+    margin-left: 47px;
+    margin-right: auto;
+    border-radius: 50%; 
+    border: 8px solid white;
 }
 .sidebar ul {
  margin-left: -54px;
@@ -49,6 +60,10 @@ html, body {
     background-color: rgb(255, 255, 255);
     color: rgb(69, 81, 255);
 }
+.sidebar .button:click{
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+}
 
 .sidebar .button.active {
     background-color: rgb(255, 255, 255);
@@ -60,7 +75,7 @@ html, body {
   width: 100%;
   background-image: url('../img/dog1.jpeg');
   height: 500px; 
-  background-attachment: fixed;
+  background-attachment: fixed; 
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
