@@ -16,24 +16,32 @@ html, body {
     width: 200px;
    
 }
+.centered{
 
+    display: flex;
+    justify-content: center;
+    align-items: start
+   
+    
+}
 .sidebar img{
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
     width: 100px;
     height:100px;
     margin-top: 10px;
-    margin-left: 47px;
-    margin-right: auto;
+  
     border-radius: 50%; 
     border: 4px solid white;
     transition-duration: 0.1s;
+    cursor: pointer;
 }
 
 .sidebar img:hover{
     width: 100px;
     height:100px;
     margin-top: 10px;
-    margin-left: 47px;
-    margin-right: auto;
     border-radius: 50%; 
     border: 8px solid white;
 }
@@ -60,10 +68,6 @@ html, body {
     background-color: rgb(255, 255, 255);
     color: rgb(69, 81, 255);
 }
-.sidebar .button:click{
-    background-color: rgb(255, 255, 255);
-    color: rgb(255, 255, 255);
-}
 
 .sidebar .button.active {
     background-color: rgb(255, 255, 255);
@@ -84,28 +88,55 @@ html, body {
   text-align: center;
 }
 .main-content{
-
     max-width: fit-content;
     margin-right: auto;
     margin-left: auto;
     text-align: center;
 }
+
 .main-content h1 {
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
     font-size: 50px;
     margin-left: 300px;
     text-align: left;
 }
 .main-content h2 {
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
     margin-left: 300px;
     text-align: left;
 }
 
 .main-content p {
+    animation: fadeInAnimation ease 4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
     width: 60%;
-    margin-right: auto;
+    margin-right: 0px;
     margin-left: 300px;
     text-align: left;
     font-size: 20px;
     font-family: "Lucida Console", "Courier New", monospace;
   
+}
+
+.main-content p1 {
+    animation: fadeInAnimation ease 4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    margin-right: auto;
+    margin-left: 1000px;
+
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }

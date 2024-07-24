@@ -25,38 +25,38 @@ document.getElementById('about').onclick = function () {
 };
 
 document.getElementById('experience').onclick = function () {
-    window.scrollTo({ top: 1000, behavior: 'smooth' });
+    window.scrollTo({ top: 950, behavior: 'smooth' });
     removeActiveClass();
     this.classList.add('active');
 };
 
 document.getElementById('projects').onclick = function () {
-    window.scrollTo({ top: 2000, behavior: 'smooth' });
+    window.scrollTo({ top: 1380, behavior: 'smooth' });
     removeActiveClass();
     this.classList.add('active');
 };
 
 document.getElementById('acheivements').onclick = function () {
-    window.scrollTo({ top: 3000, behavior: 'smooth' });
+    window.scrollTo({ top: 2160, behavior: 'smooth' });
     removeActiveClass();
     this.classList.add('active');
 };
 
 document.getElementById('contact').onclick = function () {
-    window.scrollTo({ top: 4000, behavior: 'smooth' });
+    window.scrollTo({ top: 3050, behavior: 'smooth' });
     removeActiveClass();
     this.classList.add('active');
 };
 
 window.addEventListener('scroll', function() {
     let currentSection = '';
-    if (window.scrollY >= 4000) {
+    if (window.scrollY >= 3050) {
         currentSection = 'contact';
-    } else if (window.scrollY >= 3000) {
+    } else if (window.scrollY >= 2160) {
         currentSection = 'acheivements';
-    } else if (window.scrollY >= 2000) {
+    } else if (window.scrollY >= 1380) {
         currentSection = 'projects';
-    } else if (window.scrollY >= 1000) {
+    } else if (window.scrollY >= 950) {
         currentSection = 'experience';
     } else if (window.scrollY >= 500) {
         currentSection = 'about';
