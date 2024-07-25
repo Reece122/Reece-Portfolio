@@ -136,6 +136,13 @@ html, body {
 display: flex;
 }
 
+.main-content .exp p {
+    order: 1;
+}
+.main-content .exp p1 {
+    
+}
+
 @keyframes fadeInAnimation {
     0% {
         opacity: 0;
