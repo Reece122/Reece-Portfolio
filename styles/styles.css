@@ -8,6 +8,12 @@ body {
   width: 100%;
 }
 
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+/* Sidebar */
 .sidebar {
   height: 100%;
   position: fixed;
@@ -16,11 +22,7 @@ body {
   padding: 15px;
   width: 200px;
 }
-.centered {
-  display: flex;
-  justify-content: center;
-  align-items: start;
-}
+
 .sidebar img {
   animation: fadeInAnimation ease 1s;
   animation-iteration-count: 1;
@@ -28,7 +30,6 @@ body {
   width: 100px;
   height: 100px;
   margin-top: 10px;
-
   border-radius: 50%;
   border: 4px solid white;
   transition-duration: 0.1s;
@@ -36,10 +37,6 @@ body {
 }
 
 .sidebar img:hover {
-  width: 100px;
-  height: 100px;
-  margin-top: 10px;
-  border-radius: 50%;
   border: 8px solid white;
 }
 .sidebar ul {
@@ -71,49 +68,38 @@ body {
   font-weight: bold;
 }
 
-.bg {
-  width: 100%;
+.cover-image {
   background-image: url("../img/cover-photo.jpeg");
   height: 500px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-right: auto;
-  margin-left: 230px;
-  text-align: center;
+  margin-left: -300px;
 }
+/* Main Content */
 .main-content {
   max-width: fit-content;
   margin-right: auto;
   margin-left: auto;
-  text-align: center;
+  margin-left: 300px;
 }
 
-.main-content h1 {
+.main-content h1,
+.main-content h2,
+.main-content p {
   animation: fadeInAnimation ease 3s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
-  font-size: 50px;
-  margin-left: 300px;
   text-align: left;
 }
-.main-content h2 {
-  animation: fadeInAnimation ease 3s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-  margin-left: 300px;
-  text-align: left;
+.main-content h1 {
+  font-size: 50px;
 }
 
 .main-content p {
-  animation: fadeInAnimation ease 4s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
   width: 60%;
   margin-right: 0px;
-  margin-left: 300px;
-  text-align: left;
   font-size: 20px;
   font-family: "Lucida Console", "Courier New", monospace;
 }
@@ -123,17 +109,26 @@ body {
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   margin-right: auto;
-  margin-left: 1000px;
 }
 
-.main-content .exp {
+#experience-section .row {
   display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+#experience-section .column-work {
+  flex: 2;
+  padding-right: 0px;
 }
 
-.main-content .exp p {
-  order: 1;
+#experience-section .column-work p {
+  width: 93%;
+  flex: 2;
+  padding-right: 0px;
 }
-.main-content .exp p1 {
+
+#experience-section .column-date {
+  flex: 1;
 }
 
 @keyframes fadeInAnimation {
