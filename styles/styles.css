@@ -132,6 +132,10 @@ html, body {
 
 }
 
+.main-content .exp {
+display: flex;
+}
+
 @keyframes fadeInAnimation {
     0% {
         opacity: 0;
