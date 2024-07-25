@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Reece Beaty | Personal Portfolio</title>
+    <title>Reece Beaty - Just About Me</title>
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -23,14 +23,13 @@
     />
     <link rel="manifest" href="/site.webmanifest" />
     <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/sidebar.css" />
   </head>
-
   <body>
-    <div class="sidebar">
-      <div class="centered">
-        <div class="circle" onclick="handleClick()">
-          <img src="img/avatar.jpeg" alt="avatar" />
-        </div>
+    <div class="hamburger-menu"><div id="hamburger-icon">&#9776;</div></div>
+    <div class="sidebar" id="sidebar">
+      <div class="avatar centered" onclick="handleClick()">
+        <img src="img/avatar.jpeg" alt="avatar" />
       </div>
       <nav>
         <ul>
@@ -48,138 +47,133 @@
     </div>
 
     <div class="main-content">
-      <div class="cover-image"></div>
-      <section id="about-section">
-        <h1>About</h1>
-        <p>
-          I am a dedicated 17-year-old high-honors student at Frankfurt
-          International School in Oberursel, Germany, with a passion for
-          computer science and a strong academic track record. As an all-season
-          athlete, I actively participate in volleyball, basketball, and track,
-          showcasing my commitment and team spirit. My involvement in community
-          service through Roots Revive and Youth Against Prejudice reflects my
-          dedication to making a positive impact by raising awareness about
-          deforestation and combating prejudice. I possess strong analytical and
-          critical thinking skills, proficiency in Java and Golang programming
-          languages, and working knowledge of Python and HTML. My excellent
-          organizational and interpersonal skills make me a great team player
-          and an effective leader.
-        </p>
-      </section>
-      <section id="experience-section">
-        <h1>Experience</h1>
-        <div class="row">
-          <div class="column-work">
-            <h2>BIX Internship</h2>
+      <section class="cover-photo"></section>
+      <main>
+        <section id="about-section">
+          <header>
+            <h1>About</h1>
+          </header>
+          <article>
             <p>
-              Velit consequat nulla consequat dolore eiusmod sunt voluptate sunt
-              reprehenderit laborum. Proident aliqua in consequat elit pariatur
-              amet veniam consequat ad occaecat dolore duis. Cupidatat esse ad
-              occaecat culpa et ea proident.
+              I am a dedicated 17-year-old high-honors student at Frankfurt
+              International School in Oberursel, Germany, with a passion for
+              computer science and a strong academic track record. As an
+              all-season athlete, I actively participate in volleyball,
+              basketball, and track, showcasing my commitment and team spirit.
             </p>
-          </div>
-          <div class="column-date">
-            <p1>Jul 1 2024 - Jul 26 2024</p1>
-          </div>
-        </div>
-      </section>
-      <section id="projects-section">
-        <h1>Projects</h1>
-        <p>
-          Velit consequat nulla consequat dolore eiusmod sunt voluptate sunt
-          reprehenderit laborum. Proident aliqua in consequat elit pariatur amet
-          veniam consequat ad occaecat dolore duis. Cupidatat esse ad occaecat
-          culpa et ea proident. Fugiat qui labore non ullamco eu dolor nisi duis
-          mollit anim amet. Tempor ea aliquip ad aliqua et aliqua culpa in
-          pariatur Lorem. Enim aliquip sunt laborum cillum consectetur anim
-          magna aliqua velit ea. Sint nostrud culpa voluptate anim magna velit
-          est. Sint sit occaecat cillum laboris cupidatat adipisicing commodo
-          anim tempor enim. Consequat qui veniam sunt amet laborum cillum Lorem
-          eiusmod exercitation ipsum officia sit ex eu. Ullamco ad culpa sint
-          non deserunt irure consequat deserunt ea laborum incididunt sit.
-          Mollit anim id adipisicing aute esse. Ipsum ad dolor ex ipsum
-          incididunt adipisicing. Aliquip est magna anim pariatur. Et sunt
-          aliquip et enim sunt adipisicing. Velit qui Lorem aliquip ea.
-          Consequat irure nostrud anim incididunt dolore.
-        </p>
-        <p>
-          Velit consequat nulla consequat dolore eiusmod sunt voluptate sunt
-          reprehenderit laborum. Proident aliqua in consequat elit pariatur amet
-          veniam consequat ad occaecat dolore duis. Cupidatat esse ad occaecat
-          culpa et ea proident. Fugiat qui labore non ullamco eu dolor nisi duis
-          mollit anim amet. Tempor ea aliquip ad aliqua et aliqua culpa in
-          pariatur Lorem. Enim aliquip sunt laborum cillum consectetur anim
-          magna aliqua velit ea. Sint nostrud culpa voluptate anim magna velit
-          est. Sint sit occaecat cillum laboris cupidatat adipisicing commodo
-          anim tempor enim. Consequat qui veniam sunt amet laborum cillum Lorem
-          eiusmod exercitation ipsum officia sit ex eu. Ullamco ad culpa sint
-          non deserunt irure consequat deserunt ea laborum incididunt sit.
-          Mollit anim id adipisicing aute esse. Ipsum ad dolor ex ipsum
-          incididunt adipisicing. Aliquip est magna anim pariatur. Et sunt
-          aliquip et enim sunt adipisicing. Velit qui Lorem aliquip ea.
-          Consequat irure nostrud anim incididunt dolore.
-        </p>
-      </section>
+            <p>
+              My involvement in community service through Roots Revive and Youth
+              Against Prejudice reflects my dedication to making a positive
+              impact by raising awareness about deforestation and combating
+              prejudice.
+            </p>
+            <p>
+              I possess strong analytical and critical thinking skills,
+              proficiency in Java and Golang programming languages, and working
+              knowledge of Python and HTML. My excellent organizational and
+              interpersonal skills make me a great team player and an effective
+              leader.
+            </p>
+          </article>
+        </section>
 
-      <section id="achievements-section">
-        <h1>Acheivements</h1>
-        <h2>Filler Stuff</h2>
-        <p>
-          Velit consequat nulla consequat dolore eiusmod sunt voluptate sunt
-          reprehenderit laborum. Proident aliqua in consequat elit pariatur amet
-          veniam consequat ad occaecat dolore duis. Cupidatat esse ad occaecat
-          culpa et ea proident. Fugiat qui labore non ullamco eu dolor nisi duis
-          mollit anim amet. Tempor ea aliquip ad aliqua et aliqua culpa in
-          pariatur Lorem. Enim aliquip sunt laborum cillum consectetur anim
-          magna aliqua velit ea. Sint nostrud culpa voluptate anim magna velit
-          est. Sint sit occaecat cillum laboris cupidatat adipisicing commodo
-          anim tempor enim. Consequat qui veniam sunt amet laborum cillum Lorem
-          eiusmod exercitation ipsum officia sit ex eu. Ullamco ad culpa sint
-          non deserunt irure consequat deserunt ea laborum incididunt sit.
-          Mollit anim id adipisicing aute esse. Ipsum ad dolor ex ipsum
-          incididunt adipisicing. Aliquip est magna anim pariatur. Et sunt
-          aliquip et enim sunt adipisicing. Velit qui Lorem aliquip ea.
-          Consequat irure nostrud anim incididunt dolore.
-        </p>
-        <h2>Filler Stuff</h2>
-        <p>
-          Velit consequat nulla consequat dolore eiusmod sunt voluptate sunt
-          reprehenderit laborum. Proident aliqua in consequat elit pariatur amet
-          veniam consequat ad occaecat dolore duis. Cupidatat esse ad occaecat
-          culpa et ea proident. Fugiat qui labore non ullamco eu dolor nisi duis
-          mollit anim amet. Tempor ea aliquip ad aliqua et aliqua culpa in
-          pariatur Lorem. Enim aliquip sunt laborum cillum consectetur anim
-          magna aliqua velit ea. Sint nostrud culpa voluptate anim magna velit
-          est. Sint sit occaecat cillum laboris cupidatat adipisicing commodo
-          anim tempor enim. Consequat qui veniam sunt amet laborum cillum Lorem
-          eiusmod exercitation ipsum officia sit ex eu. Ullamco ad culpa sint
-          non deserunt irure consequat deserunt ea laborum incididunt sit.
-          Mollit anim id adipisicing aute esse. Ipsum ad dolor ex ipsum
-          incididunt adipisicing. Aliquip est magna anim pariatur. Et sunt
-          aliquip et enim sunt adipisicing. Velit qui Lorem aliquip ea.
-          Consequat irure nostrud anim incididunt dolore.
-        </p>
-      </section>
-      <section id="contact-section">
-        <h1>Contact</h1>
-        <p>
-          Velit consequat nulla consequat dolore eiusmod sunt voluptate sunt
-          reprehenderit laborum. Proident aliqua in consequat elit pariatur amet
-          veniam consequat ad occaecat dolore duis. Cupidatat esse ad occaecat
-          culpa et ea proident. Fugiat qui labore non ullamco eu dolor nisi duis
-          mollit anim amet. Tempor ea aliquip ad aliqua et aliqua culpa in
-          pariatur Lorem. Enim aliquip sunt laborum cillum consectetur anim
-          magna aliqua velit ea. Sint nostrud culpa voluptate anim magna velit
-          est. Sint sit occaecat cillum laboris cupidatat adipisicing commodo
-          anim tempor enim. Consequat qui veniam sunt amet laborum cillum Lorem
-          eiusmod exercitation ipsum officia sit ex eu. Ullamco ad culpa sint
-          non deserunt irure consequat deserunt ea laborum incididunt sit.
-          Mollit anim id adipisicing aute esse. Ipsum ad dolor ex ipsum
-          incididunt adipisicing. Aliquip est magna anim pariatur. Et sunt
-          aliquip et enim sunt adipisicing. Velit qui Lorem aliquip ea.
-          Consequat irure nostrud anim incididunt dolore.
-        </p>
-      </section>
+        <section id="experience-section">
+          <header>
+            <h1>Experience</h1>
+          </header>
+          <div class="row">
+            <div class="column">
+              <h2>Position Title</h2>
+              <p>
+                Labore officia anim ut enim excepteur id dolor velit laboris id.
+                Do excepteur ipsum mollit sit nulla qui eiusmod sint est ullamco
+                dolore sint incididunt. Eu cupidatat veniam ipsum nostrud do qui
+                eiusmod est id labore Lorem qui veniam eu.
+              </p>
+            </div>
+            <div class="column">
+              <p>Datee</p>
+            </div>
+          </div>
+          <article></article>
+        </section>
+
+        <section id="projects-section">
+          <header>
+            <h1>Projects</h1>
+          </header>
+          <article>
+            <header>
+              <h2>Project Name</h2>
+            </header>
+            <p>
+              Eiusmod esse Lorem adipisicing esse pariatur cillum in ea dolor
+              exercitation veniam eu aliqua cillum. Irure fugiat pariatur sunt
+              cupidatat reprehenderit ex officia veniam esse duis est duis.
+              Voluptate ipsum magna id amet elit sint. Lorem amet eiusmod esse
+              deserunt sint minim eiusmod. Exercitation commodo proident eiusmod
+              irure aute culpa sit ullamco adipisicing laboris et aliqua tempor
+              exercitation. Ad do non aliqua laborum veniam commodo duis fugiat.
+            </p>
+            <p>
+              Eiusmod esse Lorem adipisicing esse pariatur cillum in ea dolor
+              exercitation veniam eu aliqua cillum. Irure fugiat pariatur sunt
+              cupidatat reprehenderit ex officia veniam esse duis est duis.
+              Voluptate ipsum magna id amet elit sint. Lorem amet eiusmod esse
+              deserunt sint minim eiusmod. Exercitation commodo proident eiusmod
+              irure aute culpa sit ullamco adipisicing laboris et aliqua tempor
+              exercitation. Ad do non aliqua laborum veniam commodo duis fugiat.
+            </p>
+            <p>
+              Eiusmod esse Lorem adipisicing esse pariatur cillum in ea dolor
+              exercitation veniam eu aliqua cillum. Irure fugiat pariatur sunt
+              cupidatat reprehenderit ex officia veniam esse duis est duis.
+              Voluptate ipsum magna id amet elit sint. Lorem amet eiusmod esse
+              deserunt sint minim eiusmod. Exercitation commodo proident eiusmod
+              irure aute culpa sit ullamco adipisicing laboris et aliqua tempor
+              exercitation. Ad do non aliqua laborum veniam commodo duis fugiat.
+            </p>
+          </article>
+        </section>
+
+        <section id="achievements-section">
+          <header>
+            <h1>Achievements</h1>
+          </header>
+          <p>
+            Eiusmod esse Lorem adipisicing esse pariatur cillum in ea dolor
+            exercitation veniam eu aliqua cillum. Irure fugiat pariatur sunt
+            cupidatat reprehenderit ex officia veniam esse duis est duis.
+            Voluptate ipsum magna id amet elit sint. Lorem amet eiusmod esse
+            deserunt sint minim eiusmod. Exercitation commodo proident eiusmod
+            irure aute culpa sit ullamco adipisicing laboris et aliqua tempor
+            exercitation. Ad do non aliqua laborum veniam commodo duis fugiat.
+          </p>
+        </section>
+
+        <section id="contact-section">
+          <header>
+            <h1>Contact</h1>
+          </header>
+          <p>
+            Please feel free to reach out to me through any of the following
+            channels:
+          </p>
+          <ul>
+            <li>
+              Email:
+              <a href="mailto:john.doe@example.com">john.doe@example.com</a>
+            </li>
+            <li>Phone: <a href="tel:+1234567890">+123 456 7890</a></li>
+            <li>
+              GitHub:
+              <a href="https://github.com/johndoe" target="_blank"
+                >github.com/johndoe</a
+              >
+            </li>
+          </ul>
+        </section>
+      </main>
     </div>
     <script src="js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js"></script>
