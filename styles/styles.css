@@ -21,6 +21,7 @@ body {
   color: white;
   padding: 15px;
   width: 200px;
+  z-index: 100;
 }
 
 .sidebar img {
@@ -130,7 +131,31 @@ body {
 #experience-section .column-date {
   flex: 1;
 }
+.r6 {
+  position: relative;
+  animation: mymove 1s forwards;
+}
+.hamburger-menu {
+  display: block;
+  z-index: 101;
+  color: rgb(91, 179, 255);
+  position: fixed;
+}
+@media (max-width: 568px) {
+  .sidebar,
+  .avatar,
+  .cover-image {
+    display: none;
+  }
 
+  .main-content {
+    margin-left: 30px;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+}
 @keyframes fadeInAnimation {
   0% {
     opacity: 0;
@@ -138,4 +163,31 @@ body {
   100% {
     opacity: 1;
   }
+}
+
+@keyframes mymove {
+  from {
+    left: -300px;
+  }
+  to {
+    left: 0px;
+  }
+}
+
+@keyframes mymove1 {
+  from {
+    left: 0px;
+  }
+  to {
+    left: -300px;
+  }
+}
+
+.animate {
+  position: relative;
+  animation: mymove 1s;
+}
+.animate1 {
+  position: relative;
+  animation: mymove1 1s;
 }
